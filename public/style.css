@@ -1,0 +1,163 @@
+/* ===== 共通スタイル ===== */
+:root {
+  --accent: #2f6fed;          /* 各アプリページで上書きするテーマ色 */
+  --accent-soft: #eaf1ff;
+  --text: #1f2430;
+  --muted: #5d6475;
+  --bg: #f7f8fb;
+  --card: #ffffff;
+  --radius: 20px;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: "Hiragino Sans", "Noto Sans JP", "Yu Gothic", sans-serif;
+  color: var(--text);
+  background: var(--bg);
+  line-height: 1.8;
+}
+
+img { max-width: 100%; display: block; }
+a { color: var(--accent); }
+
+.container { width: min(1000px, 92%); margin: 0 auto; }
+
+/* ヘッダー */
+.site-header {
+  background: var(--card);
+  border-bottom: 1px solid #e6e8ee;
+  position: sticky; top: 0; z-index: 10;
+}
+.site-header .container {
+  display: flex; align-items: center; justify-content: space-between;
+  height: 60px;
+}
+.logo { font-weight: 700; font-size: 1.1rem; color: var(--text); text-decoration: none; }
+.site-header nav a { color: var(--muted); text-decoration: none; font-size: .9rem; }
+
+/* ===== トップページ ===== */
+.hero { text-align: center; padding: 72px 0 40px; }
+.hero h1 { font-size: clamp(1.6rem, 4vw, 2.4rem); margin-bottom: 8px; }
+.hero p { color: var(--muted); }
+
+.app-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 24px;
+  padding-bottom: 80px;
+}
+.app-card {
+  background: var(--card);
+  border-radius: var(--radius);
+  padding: 32px 24px;
+  text-align: center;
+  text-decoration: none;
+  color: var(--text);
+  box-shadow: 0 2px 10px rgba(20, 30, 60, .06);
+  transition: transform .2s, box-shadow .2s;
+}
+.app-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 24px rgba(20, 30, 60, .12);
+}
+.app-card img {
+  width: 112px; height: 112px;
+  margin: 0 auto 16px;
+  border-radius: 24px;
+  box-shadow: 0 4px 14px rgba(20, 30, 60, .12);
+}
+.app-card h2 { font-size: 1.2rem; margin-bottom: 4px; }
+.app-card p { color: var(--muted); font-size: .9rem; }
+.app-card .more { display: inline-block; margin-top: 12px; color: var(--accent); font-weight: 600; font-size: .9rem; }
+
+/* ===== アプリ紹介ページ ===== */
+.app-hero {
+  background: linear-gradient(160deg, var(--accent-soft), var(--bg));
+  padding: 64px 0;
+}
+.app-hero .container {
+  display: flex; align-items: center; gap: 40px; flex-wrap: wrap;
+}
+.app-hero img { width: 160px; height: 160px; border-radius: 34px; box-shadow: 0 10px 30px rgba(0,0,0,.12); }
+.app-hero h1 { font-size: clamp(1.6rem, 4vw, 2.2rem); }
+.app-hero .catch { color: var(--muted); margin: 4px 0 20px; }
+
+.store-buttons { display: flex; gap: 12px; flex-wrap: wrap; }
+.btn {
+  display: inline-block;
+  padding: 12px 22px;
+  border-radius: 999px;
+  background: var(--accent);
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: .95rem;
+}
+.btn.outline { background: transparent; color: var(--accent); border: 2px solid var(--accent); }
+
+.section { padding: 56px 0; }
+.section h2 { font-size: 1.5rem; text-align: center; margin-bottom: 32px; }
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+.feature {
+  background: var(--card);
+  border-radius: var(--radius);
+  padding: 24px;
+  border-top: 4px solid var(--accent);
+}
+.feature h3 { font-size: 1.05rem; margin-bottom: 6px; }
+.feature p { color: var(--muted); font-size: .92rem; }
+
+/* スクリーンショット（横スクロール） */
+.screenshots {
+  display: flex; gap: 16px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 8px;
+}
+.screenshots img, .screenshots .placeholder {
+  flex: 0 0 220px;
+  height: 440px;
+  border-radius: 24px;
+  scroll-snap-align: start;
+  object-fit: cover;
+}
+.screenshots .placeholder {
+  background: var(--accent-soft);
+  color: var(--muted);
+  display: flex; align-items: center; justify-content: center;
+  font-size: .85rem;
+}
+
+/* 文章ページ（プライバシーポリシー） */
+.doc { background: var(--card); border-radius: var(--radius); padding: 40px; margin: 40px auto; }
+.doc h1 { font-size: 1.5rem; margin-bottom: 24px; }
+.doc h2 { font-size: 1.1rem; margin: 28px 0 8px; }
+.doc p, .doc li { color: var(--muted); }
+.doc ul { padding-left: 1.4em; }
+
+/* フッター */
+.site-footer {
+  text-align: center;
+  padding: 32px 0;
+  color: var(--muted);
+  font-size: .85rem;
+  border-top: 1px solid #e6e8ee;
+}
+.site-footer a { color: var(--muted); margin: 0 8px; }
+
+/* アプリ別テーマ色 */
+.theme-timecard { --accent: #2f6fed; --accent-soft: #e6efff; }
+.theme-calendar { --accent: #e8457a; --accent-soft: #fdebf1; }
+.theme-brain    { --accent: #1fa3e0; --accent-soft: #e3f5fd; }
+
+@media (max-width: 600px) {
+  .app-hero .container { flex-direction: column; text-align: center; }
+  .store-buttons { justify-content: center; }
+  .doc { padding: 24px; }
+}
