@@ -80,7 +80,7 @@ a { color: var(--accent); }
   display: flex; align-items: center; gap: 40px; flex-wrap: wrap;
 }
 .app-hero img { width: 160px; height: 160px; border-radius: 34px; box-shadow: 0 10px 30px rgba(0,0,0,.12); }
-.app-hero h1 { font-size: clamp(1.6rem, 4vw, 2.2rem); }
+.app-hero h1 { font-size: clamp(1.3rem, 5.4vw, 2.2rem); }
 .app-hero .catch { color: var(--muted); margin: 4px 0 20px; }
 
 .store-buttons { display: flex; gap: 12px; flex-wrap: wrap; }
@@ -160,4 +160,56 @@ a { color: var(--accent); }
   .app-hero .container { flex-direction: column; text-align: center; }
   .store-buttons { justify-content: center; }
   .doc { padding: 24px; }
+}
+
+/* ===== タイムカード：ホスト＋クライアントの2アプリ構成 ===== */
+.icon-pair { display: flex; gap: 16px; }
+.icon-pair img { width: 120px; height: 120px; border-radius: 26px; }
+
+.app-pair {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+}
+.pair-card {
+  background: var(--card);
+  border-radius: var(--radius);
+  padding: 32px 28px;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(20, 30, 60, .06);
+  border-top: 5px solid var(--accent);
+}
+.pair-card.host { border-top-color: #f08a24; }
+.pair-card.host .btn { background: #f08a24; }
+.pair-card.host .role { background: #fff1e3; color: #c0650f; }
+.pair-card img { width: 96px; height: 96px; border-radius: 22px; margin: 0 auto 14px; }
+.pair-card .role {
+  display: inline-block;
+  font-size: .8rem; font-weight: 700;
+  padding: 2px 12px; border-radius: 999px;
+  background: var(--accent-soft); color: var(--accent);
+  margin-bottom: 8px;
+}
+.pair-card h3 { font-size: 1.05rem; margin-bottom: 8px; }
+.pair-card p { color: var(--muted); font-size: .92rem; margin-bottom: 20px; text-align: left; }
+
+.steps {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+.steps li { background: var(--card); border-radius: var(--radius); padding: 24px; position: relative; }
+.steps .num {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 34px; height: 34px; border-radius: 50%;
+  background: var(--accent); color: #fff; font-weight: 700;
+  margin-bottom: 10px;
+}
+.steps h3 { font-size: 1.02rem; margin-bottom: 4px; }
+.steps p { color: var(--muted); font-size: .92rem; }
+
+@media (max-width: 600px) {
+  .icon-pair { justify-content: center; }
+  .icon-pair img { width: 96px; height: 96px; }
 }
