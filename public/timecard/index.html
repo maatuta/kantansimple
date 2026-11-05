@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>タイムカード | やまのアプリ</title>
-  <meta name="description" content="出勤・退勤をワンタップで記録。勤務時間の集計もおまかせ。">
-  <meta property="og:title" content="タイムカード">
-  <meta property="og:description" content="出勤・退勤をワンタップで記録。勤務時間の集計もおまかせ。">
+  <title>かんたんシンプル！タイムカード | やまのアプリ</title>
+  <meta name="description" content="GPSの位置情報つきで、出勤・退勤をワンタップで記録。管理者用のホストアプリと組み合わせて、グループの勤怠管理ができます。">
+  <meta property="og:title" content="かんたんシンプル！タイムカード">
+  <meta property="og:description" content="GPSの位置情報つきで、出勤・退勤をワンタップで記録できるタイムカードアプリ。">
   <meta property="og:type" content="website">
   <meta property="og:image" content="/images/timecard.png">
   <link rel="icon" href="/images/timecard.png">
@@ -22,38 +22,93 @@
 
   <section class="app-hero">
     <div class="container">
-      <img src="/images/timecard.png" alt="タイムカード アイコン">
+      <div class="icon-pair">
+        <img src="/images/timecard-orange.png" alt="ホストアプリ アイコン">
+        <img src="/images/timecard.png" alt="タイムカードアプリ アイコン">
+      </div>
       <div>
-        <h1>タイムカード</h1>
-        <p class="catch">出勤・退勤をワンタップで記録。勤務時間の集計もおまかせ。</p>
+        <h1>かんたんシンプル！タイムカード</h1>
+        <p class="catch">GPSの位置情報つきで、出勤・退勤をワンタップで記録。<br>紙のタイムカードや手書きの記録はもう必要ありません。</p>
         <div class="store-buttons">
-          <!-- ストアのURLに差し替えてください。iOS版がなければ App Store のボタンは削除 -->
-          <a class="btn" href="#">Google Play で入手</a>
-          <a class="btn outline" href="#">App Store で入手</a>
+          <a class="btn" href="#apps">アプリをダウンロード</a>
         </div>
       </div>
     </div>
   </section>
 
   <main>
+    <!-- 2つのアプリ -->
+    <section class="section container" id="apps">
+      <h2>2つのアプリを組み合わせて使います</h2>
+      <div class="app-pair">
+        <div class="pair-card host">
+          <img src="/images/timecard-orange.png" alt="ホストアプリ アイコン">
+          <span class="role">管理者の方</span>
+          <h3>かんたんシンプル！タイムカード（ホスト）</h3>
+          <p>パスコードの発行やグループの管理を行うアプリです。メンバーの打刻状況を確認できます。</p>
+          <a class="btn" href="https://play.google.com/store/apps/details?id=com.kantansimpleapp.simpletimecard.host" target="_blank" rel="noopener">Google Play で入手</a>
+        </div>
+
+        <div class="pair-card">
+          <img src="/images/timecard.png" alt="タイムカードアプリ アイコン">
+          <span class="role">スタッフ・メンバーの方</span>
+          <h3>かんたんシンプル！タイムカード</h3>
+          <p>出勤・退勤を記録するアプリです。管理者から受け取ったパスコードを入力するだけで使い始められます。</p>
+          <a class="btn" href="https://play.google.com/store/apps/details?id=com.kantansimpleapp.simpletimecard" target="_blank" rel="noopener">Google Play で入手</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 使い方 -->
+    <section class="section container">
+      <h2>使い方</h2>
+      <ol class="steps">
+        <li>
+          <span class="num">1</span>
+          <h3>管理者がホストアプリを準備</h3>
+          <p>ホストアプリをインストールし、グループを作ってパスコードを発行します。</p>
+        </li>
+        <li>
+          <span class="num">2</span>
+          <h3>メンバーがパスコードでログイン</h3>
+          <p>メンバーはタイムカードアプリをインストールし、受け取ったパスコードを入力します。</p>
+        </li>
+        <li>
+          <span class="num">3</span>
+          <h3>ボタンひとつで打刻</h3>
+          <p>出勤・退勤のボタンを押すだけ。時刻と場所が記録されます。</p>
+        </li>
+      </ol>
+    </section>
+
+    <!-- 主な機能 -->
     <section class="section container">
       <h2>主な機能</h2>
       <div class="features">
         <div class="feature">
           <h3>ワンタップ打刻</h3>
-          <p>ボタンを押すだけで出勤・退勤の時刻を記録できます。</p>
+          <p>ボタンひとつで出勤・退勤を記録できます。</p>
         </div>
         <div class="feature">
-          <h3>勤務時間の自動集計</h3>
-          <p>日・月ごとの勤務時間を自動で計算します。</p>
+          <h3>位置情報を自動記録</h3>
+          <p>打刻した場所をGPSで記録し、住所も表示します。</p>
         </div>
         <div class="feature">
-          <h3>一覧で確認</h3>
+          <h3>カレンダーで履歴確認</h3>
           <p>過去の打刻履歴をカレンダー形式で振り返れます。</p>
+        </div>
+        <div class="feature">
+          <h3>パスコードでかんたんログイン</h3>
+          <p>複雑な設定は不要。パスコードを入れるだけですぐに始められます。</p>
+        </div>
+        <div class="feature">
+          <h3>1台を複数人で共有</h3>
+          <p>「他の人が使う」機能で、お店や事務所の端末をみんなで使えます。</p>
         </div>
       </div>
     </section>
 
+    <!-- スクリーンショット -->
     <section class="section container">
       <h2>スクリーンショット</h2>
       <!-- 画像を /images/timecard-1.png などで置き、placeholder を
