@@ -118,7 +118,7 @@ a { color: var(--accent); }
   display: flex; gap: 16px;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
-  padding-bottom: 8px;
+  padding: 8px 4px 16px;
 }
 .screenshots img, .screenshots .placeholder {
   flex: 0 0 220px;
@@ -223,3 +223,14 @@ a { color: var(--accent); }
 .genre { background: var(--card); border-radius: var(--radius); padding: 22px; text-align: center; }
 .genre h3 { color: var(--accent); font-size: 1.1rem; margin-bottom: 6px; }
 .genre p { color: var(--muted); font-size: .88rem; }
+
+/* スクリーンショット（画像＋説明） */
+.screenshots figure { flex: 0 0 220px; scroll-snap-align: start; text-align: center; }
+.screenshots figure img {
+  width: 220px; height: 440px;
+  object-fit: contain;
+  background: #fff;
+  border-radius: 24px;
+  box-shadow: 0 4px 16px rgba(20, 30, 60, .10);
+}
+.screenshots figcaption { margin-top: 10px; font-size: .85rem; color: var(--muted); }
