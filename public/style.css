@@ -505,3 +505,33 @@ a { color: var(--accent); }
   .cta-band { padding: 72px 0; }
   .icon-pair img { width: 96px; height: 96px; }
 }
+
+/* キービジュアルが正方形・縦長のとき */
+.kv-hero .kv-visual.portrait img { aspect-ratio: auto; }
+.kv-hero .kv-visual.portrait { max-width: 540px; justify-self: end; width: 100%; }
+
+/* ---------- 利用シーン（画像＋テキスト） ---------- */
+.scene {
+  display: grid;
+  grid-template-columns: minmax(0, 7fr) minmax(0, 5fr);
+  align-items: center; gap: 64px;
+}
+.scene-visual { position: relative; }
+.scene-visual::before {
+  content: ""; position: absolute; inset: -6% 10% 10% -40%;
+  background: var(--accent-soft);
+  border-radius: var(--radius-lg);
+}
+.scene-visual img {
+  position: relative; width: 100%; height: auto;
+  border-radius: var(--radius-lg); box-shadow: var(--shadow-lg);
+}
+.scene-copy h2 { margin-bottom: 20px; }
+.scene-copy > p { color: var(--muted); margin-bottom: 28px; }
+.scene-copy .plan { margin-bottom: 36px; }
+
+@media (max-width: 900px) {
+  .kv-hero .kv-visual.portrait { justify-self: center; }
+  .scene { grid-template-columns: 1fr; gap: 40px; }
+  .scene-visual::before { inset: -5% 12% 12% -10%; }
+}
