@@ -36,6 +36,7 @@ body {
 }
 
 img { max-width: 100%; display: block; }
+main, .app-hero { overflow-x: clip; }
 a { color: var(--accent); }
 
 .container { width: min(1120px, 90%); margin: 0 auto; }
@@ -501,7 +502,9 @@ a { color: var(--accent); }
   .section h2, .section-head { margin-bottom: 36px; }
   .feature { padding: 32px 24px 36px; }
   .pair-card { padding: 36px 28px; }
-  .kv-hero .kv-meta { gap: 20px; }
+  .kv-hero .kv-meta { gap: 18px; }
+  .kv-hero .kv-meta div { font-size: .72rem; }
+  .kv-hero .kv-meta b { font-size: 1.35rem; }
   .cta-band { padding: 72px 0; }
   .icon-pair img { width: 96px; height: 96px; }
 }
@@ -535,3 +538,85 @@ a { color: var(--accent); }
   .scene { grid-template-columns: 1fr; gap: 40px; }
   .scene-visual::before { inset: -5% 12% 12% -10%; }
 }
+
+/* ---------- 端末ステージ（スクリーンショットを端末枠で見せる） ---------- */
+.device-stage {
+  position: relative; overflow: hidden;
+  display: flex; justify-content: center; align-items: center; gap: 6%;
+  aspect-ratio: 6 / 5;
+  padding: 5% 6% 9%;
+  border-radius: var(--radius-lg);
+  background: linear-gradient(150deg, var(--accent) -20%, var(--accent-deep) 45%, var(--ink) 100%);
+  box-shadow: var(--shadow-lg);
+}
+.device-stage::before {
+  content: ""; position: absolute; right: -18%; top: -30%;
+  width: 70%; aspect-ratio: 1; border-radius: 50%;
+  border: 1px solid rgba(255,255,255,.14);
+  box-shadow: 0 0 0 60px rgba(255,255,255,.035), 0 0 0 120px rgba(255,255,255,.025);
+}
+.device-stage figure { position: relative; width: 38%; text-align: center; }
+.device-stage figure:first-child { transform: translateY(2%) rotate(-4deg); }
+.device-stage figure:last-child  { transform: translateY(-4%) rotate(3deg); }
+.device {
+  aspect-ratio: 9 / 16;
+  border: 7px solid #0a1428; border-radius: 28px;
+  overflow: hidden; background: #fafafa;
+  box-shadow: 0 30px 50px -20px rgba(0,0,0,.55);
+}
+.device img { width: 100%; height: 100%; object-fit: cover; object-position: top; }
+.device-stage figcaption {
+  display: inline-block; margin-top: 14px;
+  padding: 3px 12px; border-radius: 999px;
+  background: rgba(255,255,255,.12); color: #fff;
+  font-size: .72rem; font-weight: 700; letter-spacing: .08em; white-space: nowrap;
+}
+.device-stage figcaption.host { background: #f08a24; }
+
+/* ---------- トップ：コラージュ ---------- */
+.kv-collage { position: relative; aspect-ratio: 1 / .86; margin-bottom: 72px; }
+.kv-collage::before {
+  content: ""; position: absolute; inset: 14% -40% -6% 22%;
+  background: linear-gradient(135deg, var(--accent) 0%, var(--accent-deep) 100%);
+  border-radius: var(--radius-lg);
+}
+.kv-collage img {
+  position: absolute; height: auto;
+  border-radius: var(--radius-lg); box-shadow: var(--shadow-lg);
+}
+.kv-collage .c1 { right: 0; top: 0; width: 86%; aspect-ratio: 3 / 2; }
+.kv-collage .c2 { left: 0; bottom: 0; width: 44%; aspect-ratio: 1212 / 1297; border: 6px solid #fff; }
+.kv-icons { display: flex; gap: 12px; margin-bottom: 28px; }
+.kv-icons img { width: 56px; height: 56px; border-radius: 14px; box-shadow: var(--shadow-md); }
+
+/* ---------- トップ：アプリ紹介（交互レイアウト） ---------- */
+.showcase { display: grid; gap: 120px; }
+.scene.reverse { grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); }
+.scene.reverse .scene-visual { order: 2; }
+.scene.reverse .scene-visual::before { inset: -6% -40% 10% 10%; }
+.scene-copy .app-mark { display: flex; align-items: center; gap: 14px; margin-bottom: 20px; }
+.scene-copy .app-mark img { width: 56px; height: 56px; border-radius: 14px; box-shadow: var(--shadow-md); }
+.scene-copy .app-mark .subname {
+  font-family: var(--font-en); color: var(--accent); font-weight: 600;
+  font-size: .75rem; letter-spacing: .14em; text-transform: uppercase;
+}
+.scene-copy .store-buttons { margin-top: 4px; }
+.scene-visual .device-stage { position: relative; box-shadow: var(--shadow-lg); }
+
+@media (max-width: 900px) {
+  .kv-collage { margin: 0 0 56px; }
+  .kv-collage::before { inset: 14% -10% -6% 22%; }
+  .showcase { gap: 88px; }
+  .scene.reverse { grid-template-columns: 1fr; }
+  .scene.reverse .scene-visual { order: 0; }
+  .scene.reverse .scene-visual::before { inset: -5% -10% 12% 12%; }
+}
+@media (max-width: 720px) {
+  .device { border-width: 5px; border-radius: 20px; }
+  .device-stage figcaption { font-size: .65rem; padding: 2px 9px; }
+}
+
+/* ヒーロー内の画像に .app-hero img のアイコン用サイズが効かないようにする */
+.app-hero .device img { width: 100%; height: 100%; border-radius: 0; box-shadow: none; }
+.app-hero .kv-collage img { height: auto; }
+.app-hero .kv-icons img { width: 56px; height: 56px; border-radius: 14px; }

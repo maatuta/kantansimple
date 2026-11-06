@@ -24,110 +24,149 @@
         <a href="/timecard/" aria-current="page">タイムカード</a>
         <a href="/calendar/">カレンダー</a>
         <a href="/brain/">脳トレ</a>
+        <a class="nav-cta" href="#apps">ダウンロード</a>
       </nav>
     </div>
   </header>
 
-  <section class="app-hero">
+  <section class="app-hero kv-hero">
     <div class="container">
-      <div class="icon-pair">
-        <img src="/images/timecard-orange.png" alt="ホストアプリ アイコン">
-        <img src="/images/timecard.png" alt="タイムカードアプリ アイコン">
-      </div>
-      <div>
-        <h1>かんたんシンプル！タイムカード</h1>
-        <p class="catch">GPSの位置情報つきで、出勤・退勤をワンタップで記録。<br>紙のタイムカードや手書きの記録はもう必要ありません。</p>
+      <div class="kv-copy">
+        <div class="kv-app">
+          <img src="/images/timecard.png" alt="タイムカード アイコン">
+          <div>
+            <strong>かんたんシンプル！タイムカード</strong>
+            <p class="subname">Simple Time Card</p>
+          </div>
+        </div>
+        <h1><span class="nw">出勤・退勤を、</span><br><em class="nw">ワンタップで記録。</em></h1>
+        <p class="catch">GPSの位置情報つきで、打刻の時刻と場所を自動で記録。<br>紙のタイムカードや手書きの記録はもう必要ありません。</p>
         <div class="store-buttons">
           <a class="btn" href="#apps">アプリをダウンロード</a>
+          <a class="btn outline" href="#howto">使い方を見る</a>
+        </div>
+        <div class="kv-meta">
+          <div><b>2</b>つのアプリで連携</div>
+          <div><b>GPS</b>打刻場所を記録</div>
+          <div><b>1</b>タップで打刻</div>
+        </div>
+      </div>
+      <div class="kv-visual">
+        <div class="device-stage">
+          <figure>
+            <div class="device"><img src="/images/timecard-2.webp" alt="ホストアプリのホーム画面（管理者用）"></div>
+            <figcaption class="host">管理者用ホスト</figcaption>
+          </figure>
+          <figure>
+            <div class="device"><img src="/images/timecard-1.webp" alt="打刻画面（スタッフ用）"></div>
+            <figcaption>スタッフ用</figcaption>
+          </figure>
         </div>
       </div>
     </div>
   </section>
 
   <main>
-    <!-- 2つのアプリ -->
-    <section class="section container" id="apps">
-      <h2>2つのアプリを組み合わせて使います</h2>
-      <div class="app-pair">
-        <div class="pair-card host">
-          <img src="/images/timecard-orange.png" alt="ホストアプリ アイコン">
-          <span class="role">管理者の方</span>
-          <h3>かんたんシンプル！タイムカード（ホスト）</h3>
-          <p>パスコードの発行やグループの管理を行うアプリです。メンバーの打刻状況を確認できます。</p>
-          <a class="btn" href="https://play.google.com/store/apps/details?id=com.kantansimpleapp.simpletimecard.host" target="_blank" rel="noopener">Google Play で入手</a>
+    <section class="section" id="apps">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Apps</p>
+            <h2>2つのアプリを<br>組み合わせて使います</h2>
+          </div>
+          <p class="lead">管理者はホストアプリ、スタッフはタイムカードアプリ。それぞれ Google Play から無料でダウンロードできます。</p>
         </div>
+          <div class="app-pair">
+            <div class="pair-card host">
+              <img src="/images/timecard-orange.png" alt="ホストアプリ アイコン">
+              <span class="role">管理者の方</span>
+              <h3>かんたんシンプル！タイムカード（ホスト）</h3>
+              <p>パスコードの発行やグループの管理を行うアプリです。メンバーの打刻状況を確認できます。</p>
+              <a class="btn" href="https://play.google.com/store/apps/details?id=com.kantansimpleapp.simpletimecard.host" target="_blank" rel="noopener">Google Play で入手</a>
+            </div>
 
-        <div class="pair-card">
-          <img src="/images/timecard.png" alt="タイムカードアプリ アイコン">
-          <span class="role">スタッフ・メンバーの方</span>
-          <h3>かんたんシンプル！タイムカード</h3>
-          <p>出勤・退勤を記録するアプリです。管理者から受け取ったパスコードを入力するだけで使い始められます。</p>
-          <a class="btn" href="https://play.google.com/store/apps/details?id=com.kantansimpleapp.simpletimecard" target="_blank" rel="noopener">Google Play で入手</a>
-        </div>
+            <div class="pair-card">
+              <img src="/images/timecard.png" alt="タイムカードアプリ アイコン">
+              <span class="role">スタッフ・メンバーの方</span>
+              <h3>かんたんシンプル！タイムカード</h3>
+              <p>出勤・退勤を記録するアプリです。管理者から受け取ったパスコードを入力するだけで使い始められます。</p>
+              <a class="btn" href="https://play.google.com/store/apps/details?id=com.kantansimpleapp.simpletimecard" target="_blank" rel="noopener">Google Play で入手</a>
+            </div>
+          </div>
       </div>
     </section>
 
-    <!-- 使い方 -->
-    <section class="section container">
-      <h2>使い方</h2>
-      <ol class="steps">
-        <li>
-          <span class="num">1</span>
-          <h3>管理者がホストアプリを準備</h3>
-          <p>ホストアプリをインストールし、グループを作ってパスコードを発行します。</p>
-        </li>
-        <li>
-          <span class="num">2</span>
-          <h3>メンバーがパスコードでログイン</h3>
-          <p>メンバーはタイムカードアプリをインストールし、受け取ったパスコードを入力します。</p>
-        </li>
-        <li>
-          <span class="num">3</span>
-          <h3>ボタンひとつで打刻</h3>
-          <p>出勤・退勤のボタンを押すだけ。時刻と場所が記録されます。</p>
-        </li>
-      </ol>
-    </section>
-
-    <!-- 主な機能 -->
-    <section class="section container">
-      <h2>主な機能</h2>
-      <div class="features">
-        <div class="feature">
-          <h3>ワンタップ打刻</h3>
-          <p>ボタンひとつで出勤・退勤を記録できます。</p>
+    <section class="section section-alt" id="howto">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">How to use</p>
+            <h2>3ステップで、<br>すぐに使い始められます</h2>
+          </div>
+          <p class="lead">むずかしい設定は必要ありません。パスコードを共有するだけで準備が整います。</p>
         </div>
-        <div class="feature">
-          <h3>位置情報を自動記録</h3>
-          <p>打刻した場所をGPSで記録し、住所も表示します。</p>
-        </div>
-        <div class="feature">
-          <h3>カレンダーで履歴確認</h3>
-          <p>過去の打刻履歴をカレンダー形式で振り返れます。</p>
-        </div>
-        <div class="feature">
-          <h3>パスコードでかんたんログイン</h3>
-          <p>複雑な設定は不要。パスコードを入れるだけですぐに始められます。</p>
-        </div>
-        <div class="feature">
-          <h3>1台を複数人で共有</h3>
-          <p>「他の人が使う」機能で、お店や事務所の端末をみんなで使えます。</p>
-        </div>
+          <ol class="steps">
+            <li>
+              <span class="num">1</span>
+              <h3>管理者がホストアプリを準備</h3>
+              <p>ホストアプリをインストールし、グループを作ってパスコードを発行します。</p>
+            </li>
+            <li>
+              <span class="num">2</span>
+              <h3>メンバーがパスコードでログイン</h3>
+              <p>メンバーはタイムカードアプリをインストールし、受け取ったパスコードを入力します。</p>
+            </li>
+            <li>
+              <span class="num">3</span>
+              <h3>ボタンひとつで打刻</h3>
+              <p>出勤・退勤のボタンを押すだけ。時刻と場所が記録されます。</p>
+            </li>
+          </ol>
       </div>
     </section>
 
-    <!-- スクリーンショット -->
-    <section class="section container">
-      <h2>スクリーンショット</h2>
-      <div class="screenshots">
-        <figure>
-          <img src="/images/timecard-1.webp" alt="打刻画面（スタッフ用）" loading="lazy">
-          <figcaption>打刻画面（スタッフ用）</figcaption>
-        </figure>
-        <figure>
-          <img src="/images/timecard-2.webp" alt="ホーム画面（管理者用ホスト）" loading="lazy">
-          <figcaption>ホーム画面（管理者用ホスト）</figcaption>
-        </figure>
+    <section class="section" id="features">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Features</p>
+            <h2>勤怠管理を、<br>もっとシンプルに。</h2>
+          </div>
+          <p class="lead">お店や事務所、小さなチームの勤怠管理に必要な機能をそろえました。</p>
+        </div>
+          <div class="features">
+            <div class="feature">
+              <h3>ワンタップ打刻</h3>
+              <p>ボタンひとつで出勤・退勤を記録できます。</p>
+            </div>
+            <div class="feature">
+              <h3>位置情報を自動記録</h3>
+              <p>打刻した場所をGPSで記録し、住所も表示します。</p>
+            </div>
+            <div class="feature">
+              <h3>カレンダーで履歴確認</h3>
+              <p>過去の打刻履歴をカレンダー形式で振り返れます。</p>
+            </div>
+            <div class="feature">
+              <h3>パスコードでかんたんログイン</h3>
+              <p>複雑な設定は不要。パスコードを入れるだけですぐに始められます。</p>
+            </div>
+            <div class="feature">
+              <h3>1台を複数人で共有</h3>
+              <p>「他の人が使う」機能で、お店や事務所の端末をみんなで使えます。</p>
+            </div>
+          </div>
+      </div>
+    </section>
+
+    <section class="cta-band">
+      <div class="container">
+        <div>
+          <p class="eyebrow">Download</p>
+          <h2>紙のタイムカードから、<br>スマホの打刻へ。</h2>
+          <p>Android 向けに Google Play で無料配信中です。</p>
+        </div>
+        <a class="btn light" href="#apps">アプリをダウンロード</a>
       </div>
     </section>
   </main>

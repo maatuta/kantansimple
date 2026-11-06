@@ -10,7 +10,7 @@
   <meta property="og:title" content="KantanSimpleApp">
   <meta property="og:description" content="個人開発アプリの紹介サイト">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="/images/timecard.png">
+  <meta property="og:image" content="/images/calendar-ogp.jpg">
   <!-- 独自ドメインが決まったら og:url も追加：<meta property="og:url" content="https://example.com/"> -->
 
   <link rel="icon" href="/images/timecard.png">
@@ -32,37 +32,155 @@
     </div>
   </header>
 
-  <main class="container">
-    <section class="hero">
-      <h1>毎日をちょっと便利にするアプリ</h1>
-      <p>個人で開発しているアプリを紹介しています。</p>
+  <section class="app-hero kv-hero">
+    <div class="container">
+      <div class="kv-copy">
+        <div class="kv-icons">
+          <img src="/images/timecard.png" alt="タイムカード アイコン">
+          <img src="/images/calendar.png" alt="カレンダー アイコン">
+          <img src="/images/brain.png" alt="脳トレ アイコン">
+        </div>
+        <p class="eyebrow">KantanSimpleApp</p>
+        <h1><span class="nw">毎日を、</span><br><em class="nw">ちょっと便利に。</em></h1>
+        <p class="catch">勤怠管理、スケジュール、脳トレ。<br>「かんたん」で「シンプル」なアプリを個人で開発しています。</p>
+        <div class="store-buttons">
+          <a class="btn" href="#apps">アプリを見る</a>
+          <a class="btn outline" href="#contact">お問い合わせ</a>
+        </div>
+        <div class="kv-meta">
+          <div><b>3</b>つのアプリを公開中</div>
+          <div><b>Android</b>Google Play で配信</div>
+          <div><b>¥0</b>無料で始められる</div>
+        </div>
+      </div>
+      <div class="kv-collage">
+        <img class="c1" src="/images/calendar-hero-960.webp" width="960" height="640" alt="スマートフォンでカレンダーを確認する女性">
+        <img class="c2" src="/images/brain-hero-960.webp" width="960" height="1027" alt="通勤電車で脳トレを遊ぶ男性">
+      </div>
+    </div>
+  </section>
+
+  <main>
+    <section class="section" id="apps">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Our Apps</p>
+            <h2>暮らしと仕事に寄り添う、<br>3つのアプリ</h2>
+          </div>
+          <p class="lead">どのアプリも、迷わず使える操作と必要十分な機能にこだわりました。</p>
+        </div>
+
+        <div class="showcase">
+          <div class="scene">
+            <div class="scene-visual">
+              <div class="device-stage">
+                <figure>
+                  <div class="device"><img src="/images/timecard-2.webp" alt="ホストアプリのホーム画面" loading="lazy"></div>
+                  <figcaption class="host">管理者用</figcaption>
+                </figure>
+                <figure>
+                  <div class="device"><img src="/images/timecard-1.webp" alt="タイムカードの打刻画面" loading="lazy"></div>
+                  <figcaption>スタッフ用</figcaption>
+                </figure>
+              </div>
+            </div>
+            <div class="scene-copy">
+              <div class="app-mark">
+                <img src="/images/timecard.png" alt="">
+                <p class="subname">01 / Time Card</p>
+              </div>
+              <h2>かんたんシンプル！<br>タイムカード</h2>
+              <p>GPSの位置情報つきで、出勤・退勤をワンタップで記録。管理者用のホストアプリと組み合わせて、グループの勤怠管理ができます。</p>
+              <ul class="plan">
+                <li>ボタンひとつで打刻、場所も自動で記録</li>
+                <li>パスコードを入れるだけでかんたんログイン</li>
+              </ul>
+              <div class="store-buttons"><a class="btn" href="/timecard/">詳しく見る</a></div>
+            </div>
+          </div>
+
+          <div class="scene reverse">
+            <div class="scene-visual">
+              <img src="/images/calendar-hero-960.webp" width="960" height="640" loading="lazy" alt="休憩時間にカレンダーを確認する女性">
+            </div>
+            <div class="scene-copy">
+              <div class="app-mark">
+                <img src="/images/calendar.png" alt="">
+                <p class="subname">02 / Calendar</p>
+              </div>
+              <h2>カレンダータスクリスト<br>&amp;報告書</h2>
+              <p>予定・ToDo・日報をひとつのアプリで。招待コードで家族やチームとカレンダーを共有できます。</p>
+              <ul class="plan">
+                <li>日報の項目を自由に設定、PDFで出力</li>
+                <li>5か国の祝日表示・8言語対応</li>
+              </ul>
+              <div class="store-buttons"><a class="btn" href="/calendar/">詳しく見る</a></div>
+            </div>
+          </div>
+
+          <div class="scene">
+            <div class="scene-visual">
+              <img src="/images/brain-scene-960.webp" width="960" height="640" loading="lazy" alt="散歩しながら脳トレを楽しむ女性">
+            </div>
+            <div class="scene-copy">
+              <div class="app-mark">
+                <img src="/images/brain.png" alt="">
+                <p class="subname">03 / Brain Games</p>
+              </div>
+              <h2>脳トレ ミニゲーム</h2>
+              <p>1回数秒〜数分。すきま時間に、記憶・計算・反射神経をトレーニングできる26種類のミニゲーム集です。</p>
+              <ul class="plan">
+                <li>5つのジャンルをバランスよく収録</li>
+                <li>アカウント登録なしですぐに遊べる</li>
+              </ul>
+              <div class="store-buttons"><a class="btn" href="/brain/">詳しく見る</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section class="app-grid">
-      <a class="app-card" href="/timecard/">
-        <img src="/images/timecard.png" alt="タイムカード アイコン">
-        <h2>かんたんシンプル！タイムカード</h2>
-        <p>GPSつきで出勤・退勤をワンタップ記録</p>
-        <span class="more">詳しく見る →</span>
-      </a>
+    <section class="section section-alt" id="concept">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Concept</p>
+            <h2>かんたん、シンプル。<br>それがいちばん使いやすい。</h2>
+          </div>
+          <p class="lead">機能を詰め込むより、毎日迷わず使えること。KantanSimpleApp のアプリづくりの考え方です。</p>
+        </div>
+        <div class="features">
+          <div class="feature">
+            <h3>迷わない操作</h3>
+            <p>説明書を読まなくても使えるように、画面とボタンをできるだけ分かりやすく設計しています。</p>
+          </div>
+          <div class="feature">
+            <h3>必要な機能だけ</h3>
+            <p>よく使う機能に絞り込むことで、軽くて見やすいアプリに仕上げています。</p>
+          </div>
+          <div class="feature">
+            <h3>無料で始められる</h3>
+            <p>すべてのアプリを無料でダウンロードできます。まずは気軽にお試しください。</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-      <a class="app-card" href="/calendar/">
-        <img src="/images/calendar.png" alt="カレンダー アイコン">
-        <h2>カレンダータスクリスト&amp;報告書</h2>
-        <p>家族やチームと予定を共有</p>
-        <span class="more">詳しく見る →</span>
-      </a>
-
-      <a class="app-card" href="/brain/">
-        <img src="/images/brain.png" alt="脳トレ アイコン">
-        <h2>脳トレ ミニゲーム</h2>
-        <p>26種類のミニゲームで頭の体操</p>
-        <span class="more">詳しく見る →</span>
-      </a>
+    <section class="cta-band" id="contact">
+      <div class="container">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h2>アプリに関するお問い合わせ</h2>
+          <p>ご意見・ご要望・不具合のご報告は、メールでお気軽にどうぞ。</p>
+        </div>
+        <a class="btn light" href="mailto:kantansimpleapp@gmail.com">kantansimpleapp@gmail.com</a>
+      </div>
     </section>
   </main>
 
   <footer class="site-footer">
+    <p><a href="/timecard/">タイムカード</a><a href="/calendar/">カレンダー</a><a href="/brain/">脳トレ</a></p>
     <p>&copy; 2026 KantanSimpleApp</p>
   </footer>
 </body>
