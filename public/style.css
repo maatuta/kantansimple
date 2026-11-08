@@ -64,6 +64,29 @@ a { color: var(--accent); }
   background: linear-gradient(135deg, #1f5bd8 0%, #0b1b36 100%);
   box-shadow: 0 4px 10px -4px rgba(31, 91, 216, .6);
 }
+/* ロゴ＋言語切替（左上） */
+.brand { display: flex; align-items: center; gap: 16px; }
+.lang-switch {
+  display: inline-flex; align-items: center;
+  padding: 3px; border-radius: 999px;
+  background: var(--bg-alt); border: 1px solid var(--line);
+  font-family: var(--font-en); font-size: .74rem; font-weight: 600; line-height: 1;
+}
+.lang-switch a {
+  padding: 6px 11px; border-radius: 999px;
+  color: var(--muted); text-decoration: none; white-space: nowrap;
+  transition: color .2s, background .2s;
+}
+.lang-switch a:hover { color: var(--ink); }
+.lang-switch a[aria-current="true"] {
+  background: #fff; color: var(--ink);
+  box-shadow: 0 1px 3px rgba(11, 27, 54, .14);
+}
+.lang-switch a[lang="ja"] { font-family: var(--font-jp); }
+
+/* 英語ページ用の文字設定 */
+html[lang="en"] body { font-family: var(--font-en); letter-spacing: 0; line-height: 1.7; }
+
 .site-header nav { display: flex; align-items: center; gap: 28px; }
 .site-header nav a {
   position: relative;
