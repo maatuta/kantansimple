@@ -237,6 +237,12 @@ html[lang="en"] body { font-family: var(--font-en); letter-spacing: 0; line-heig
 .kv-hero .kv-app .subname { margin: 0; }
 .kv-hero .kv-app strong { display: block; color: var(--ink); font-size: .95rem; line-height: 1.5; }
 .kv-hero h1 { font-size: clamp(1.7rem, 3.4vw, 2.5rem); line-height: 1.35; letter-spacing: .01em; }
+.kv-hero h1.kv-heading { font-size: 1rem; font-weight: 400; line-height: inherit; letter-spacing: inherit; }
+.kv-hero .kv-heading .subname { display: block; }
+.kv-hero .kv-title {
+  display: block; font-size: clamp(1.7rem, 3.4vw, 2.5rem); font-weight: 800;
+  line-height: 1.35; letter-spacing: .01em; color: var(--ink);
+}
 .kv-hero h1 .nw { white-space: nowrap; }
 .kv-hero h1 em {
   font-style: normal;
