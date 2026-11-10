@@ -649,3 +649,9 @@ html[lang="en"] body { font-family: var(--font-en); letter-spacing: 0; line-heig
 .app-hero .device img { width: 100%; height: 100%; border-radius: 0; box-shadow: none; }
 .app-hero .kv-collage img { height: auto; }
 .app-hero .kv-icons img { width: 56px; height: 56px; border-radius: 14px; }
+
+/* よくある質問 */
+.faq-more { margin-top: 32px; text-align: center; }
+.doc.faq strong { color: var(--ink); }
+.doc .faq-cta { margin-top: 48px; padding-top: 28px; border-top: 1px solid var(--line); }
+.doc .faq-cta .store-buttons { display: flex; flex-wrap: wrap; gap: 12px; margin: 16px 0; }

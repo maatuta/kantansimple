@@ -97,4 +97,20 @@
     <lastmod>2026-11-08</lastmod>
     <priority>0.3</priority>
   </url>
+  <url>
+    <loc>https://kantansimpleapp.com/timecard/faq.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://kantansimpleapp.com/timecard/faq.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kantansimpleapp.com/en/timecard/faq.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kantansimpleapp.com/timecard/faq.html"/>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://kantansimpleapp.com/en/timecard/faq.html</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://kantansimpleapp.com/timecard/faq.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kantansimpleapp.com/en/timecard/faq.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kantansimpleapp.com/timecard/faq.html"/>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
 </urlset>
