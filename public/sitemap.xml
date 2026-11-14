@@ -34,18 +34,18 @@
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://kantansimpleapp.com/timecard/privacy.html</loc>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://kantansimpleapp.com/timecard/privacy.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://kantansimpleapp.com/en/timecard/privacy.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://kantansimpleapp.com/timecard/privacy.html"/>
+    <loc>https://kantansimpleapp.com/timecard/privacy</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://kantansimpleapp.com/timecard/privacy"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kantansimpleapp.com/en/timecard/privacy"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kantansimpleapp.com/timecard/privacy"/>
     <lastmod>2026-11-08</lastmod>
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://kantansimpleapp.com/brain/privacy.html</loc>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://kantansimpleapp.com/brain/privacy.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://kantansimpleapp.com/en/brain/privacy.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://kantansimpleapp.com/brain/privacy.html"/>
+    <loc>https://kantansimpleapp.com/brain/privacy</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://kantansimpleapp.com/brain/privacy"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kantansimpleapp.com/en/brain/privacy"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kantansimpleapp.com/brain/privacy"/>
     <lastmod>2026-11-08</lastmod>
     <priority>0.3</priority>
   </url>
@@ -82,66 +82,66 @@
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://kantansimpleapp.com/en/timecard/privacy.html</loc>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://kantansimpleapp.com/timecard/privacy.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://kantansimpleapp.com/en/timecard/privacy.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://kantansimpleapp.com/timecard/privacy.html"/>
+    <loc>https://kantansimpleapp.com/en/timecard/privacy</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://kantansimpleapp.com/timecard/privacy"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kantansimpleapp.com/en/timecard/privacy"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kantansimpleapp.com/timecard/privacy"/>
     <lastmod>2026-11-08</lastmod>
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://kantansimpleapp.com/en/brain/privacy.html</loc>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://kantansimpleapp.com/brain/privacy.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://kantansimpleapp.com/en/brain/privacy.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://kantansimpleapp.com/brain/privacy.html"/>
+    <loc>https://kantansimpleapp.com/en/brain/privacy</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://kantansimpleapp.com/brain/privacy"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kantansimpleapp.com/en/brain/privacy"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kantansimpleapp.com/brain/privacy"/>
     <lastmod>2026-11-08</lastmod>
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://kantansimpleapp.com/timecard/faq.html</loc>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://kantansimpleapp.com/timecard/faq.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://kantansimpleapp.com/en/timecard/faq.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://kantansimpleapp.com/timecard/faq.html"/>
+    <loc>https://kantansimpleapp.com/timecard/faq</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://kantansimpleapp.com/timecard/faq"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kantansimpleapp.com/en/timecard/faq"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kantansimpleapp.com/timecard/faq"/>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://kantansimpleapp.com/en/timecard/faq.html</loc>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://kantansimpleapp.com/timecard/faq.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://kantansimpleapp.com/en/timecard/faq.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://kantansimpleapp.com/timecard/faq.html"/>
+    <loc>https://kantansimpleapp.com/en/timecard/faq</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://kantansimpleapp.com/timecard/faq"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kantansimpleapp.com/en/timecard/faq"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kantansimpleapp.com/timecard/faq"/>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://kantansimpleapp.com/calendar/faq.html</loc>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://kantansimpleapp.com/calendar/faq.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://kantansimpleapp.com/en/calendar/faq.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://kantansimpleapp.com/calendar/faq.html"/>
+    <loc>https://kantansimpleapp.com/calendar/faq</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://kantansimpleapp.com/calendar/faq"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kantansimpleapp.com/en/calendar/faq"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kantansimpleapp.com/calendar/faq"/>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://kantansimpleapp.com/en/calendar/faq.html</loc>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://kantansimpleapp.com/calendar/faq.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://kantansimpleapp.com/en/calendar/faq.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://kantansimpleapp.com/calendar/faq.html"/>
+    <loc>https://kantansimpleapp.com/en/calendar/faq</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://kantansimpleapp.com/calendar/faq"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kantansimpleapp.com/en/calendar/faq"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kantansimpleapp.com/calendar/faq"/>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://kantansimpleapp.com/brain/faq.html</loc>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://kantansimpleapp.com/brain/faq.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://kantansimpleapp.com/en/brain/faq.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://kantansimpleapp.com/brain/faq.html"/>
+    <loc>https://kantansimpleapp.com/brain/faq</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://kantansimpleapp.com/brain/faq"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kantansimpleapp.com/en/brain/faq"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kantansimpleapp.com/brain/faq"/>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://kantansimpleapp.com/en/brain/faq.html</loc>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://kantansimpleapp.com/brain/faq.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://kantansimpleapp.com/en/brain/faq.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://kantansimpleapp.com/brain/faq.html"/>
+    <loc>https://kantansimpleapp.com/en/brain/faq</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://kantansimpleapp.com/brain/faq"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kantansimpleapp.com/en/brain/faq"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kantansimpleapp.com/brain/faq"/>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
