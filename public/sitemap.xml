@@ -161,4 +161,20 @@
     <lastmod>2026-11-14</lastmod>
     <priority>0.7</priority>
   </url>
+  <url>
+    <loc>https://kantansimpleapp.com/pdf/faq</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://kantansimpleapp.com/pdf/faq"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kantansimpleapp.com/en/pdf/faq"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kantansimpleapp.com/pdf/faq"/>
+    <lastmod>2026-11-21</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://kantansimpleapp.com/en/pdf/faq</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://kantansimpleapp.com/pdf/faq"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kantansimpleapp.com/en/pdf/faq"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kantansimpleapp.com/pdf/faq"/>
+    <lastmod>2026-11-21</lastmod>
+    <priority>0.7</priority>
+  </url>
 </urlset>
