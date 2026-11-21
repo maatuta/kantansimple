@@ -504,6 +504,7 @@ html[lang="en"] body { font-family: var(--font-en); letter-spacing: 0; line-heig
 .theme-timecard { --accent: #1f5bd8; --accent-soft: #e8f0ff; --accent-deep: #0f2f6b; }
 .theme-calendar { --accent: #1c56d6; --accent-soft: #e6efff; --accent-deep: #0d2c6e; }
 .theme-brain    { --accent: #1593d4; --accent-soft: #e3f5fd; --accent-deep: #0a3e66; }
+.theme-pdf      { --accent: #4a52d6; --accent-soft: #ecedff; --accent-deep: #1e2370; }
 
 /* ---------- タイムカード：アイコン2つ ---------- */
 .icon-pair { display: flex; gap: 16px; }
